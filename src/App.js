@@ -20,7 +20,6 @@ function rearrangeOptions(array) {
 
 function App() {
   const [quizList, SetQuizList] = useState()
-  console.log("TCL: App -> quizList", quizList)
   const [currectQuestionIndex, SetCurrectQuestionIndex] = useState()
   const [steps, SetSteps] = useState("INITIAL")
 
@@ -49,7 +48,6 @@ function App() {
     newPayload[currectQuestionIndex]["selectedAnswer"] = option
     SetQuizList(newPayload)
   }
-  console.log("currectQuestionIndex === (quizList?.length - 1)", currectQuestionIndex, quizList?.length - 1, currectQuestionIndex === (quizList?.length - 1));
   return (
     <div className="position-relative vh-100 m-2">
       {steps === "INITIAL" ?
