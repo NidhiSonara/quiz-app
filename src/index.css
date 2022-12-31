@@ -9,11 +9,12 @@ body {
   color: white !important;
   font-size: 2rem !important;
 }
+
 @media only screen and (max-width: 600px) {
-  body{
-font-size: 1.3rem !important;
+  body {
+    font-size: 1.3rem !important;
   }
-  }
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -37,4 +38,11 @@ code {
   width: 1.2rem;
   border-bottom: 7px solid green;
   border-right: 7px solid green;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
